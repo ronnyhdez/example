@@ -1,5 +1,5 @@
 ---
-title: "My super example"
+title: "Better Title :O"
 author: "ronny"
 date: "11/8/2019"
 output:
