@@ -55,6 +55,10 @@ mtcars %>%
 
 ### Another one
 ```{r}
+bla bla bla holis
+pachamama por siempre
 
+jha 
+Prof. R. (R + Ronny + Rastaman + Ron <3)
 ```
 
