@@ -1,0 +1,56 @@
+---
+title: "My super example"
+author: "ronny"
+date: "11/8/2019"
+output:
+  html_document:
+    theme: cosmo
+---
+
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(dplyr)
+library(ggplot2)
+library(kableExtra)
+```
+
+# First title
+
+  This is normal text.
+  **This is bold** 
+  *italic*
+  __bold__
+ 
+ > citation
+
+uno
+
+dos
+
+[word I want to link](https://www.markdownguide.org/cheat-sheet/)
+
+```{r first chunk, cache = TRUE, fig.width = 11, fig.height= 15}
+# this is a commment in my code
+
+ggplot(iris, aes(Sepal.Length, Sepal.Width)) +
+  geom_point()
+```
+
+## Second title
+```{r graphic chunk}
+mtcars %>% 
+  group_by(cyl) %>% 
+  summarise(
+    mean_hp = mean(hp)
+  ) #%>% 
+  # kable() %>%
+  # kable_styling(bootstrap_options = "striped")
+```
+
+### Another one
+```{r}
+
+```
+
